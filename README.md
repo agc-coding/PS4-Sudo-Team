@@ -2,7 +2,7 @@
 This is a group assignment with 2-4 people per group.
 Members:
 1. Abby Coffey
-2.
+2. Sijia Li
 3.
 4.
 
