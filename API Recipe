@@ -1,0 +1,27 @@
+# This will print how many recipes are in the database for a specific food
+
+import urllib.request, urllib.parse, urllib.error
+import json
+import re
+
+serviceurl = 'http://www.recipepuppy.com/api'
+
+while True:
+  food_name = input('Enter a food here:')
+  if len(food_name) < 1: break
+  
+  url = serviceurl + "?" + urllib.parse.urlencode(
+    {'q': food_name})
+
+print('Retrieving', url)
+uh = urllib.request.urlopen(url)
+data = uh.read().decode()
+print('Retrieved', len(data), 'recipes')
+
+try:
+  js = json.loads(data)
+except:
+  js = None
+  print('None found')
+  
+print("Food name:", food_name[0:])
