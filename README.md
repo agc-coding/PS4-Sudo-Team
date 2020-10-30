@@ -3,7 +3,7 @@ This is a group assignment with 2-4 people per group.
 Members:
 1. Abby Coffey
 2. Sijia Li
-3.
+3. Nathan O'Neil
 4.
 
 For each group member, find a data source with an API--here is the Public API page (Links to an external site.) I linked to in class, there are other lists, I am sure. Each group member can pick their own API and there is no need that it be Biology related, though should be appropriate. Each group member should pick a different API.
