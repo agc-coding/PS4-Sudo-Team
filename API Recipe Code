@@ -16,6 +16,8 @@ while True:
 print('Retrieving', url)
 uh = urllib.request.urlopen(url)
 data = uh.read().decode()
+data = re.search('(\[.*\])', data)
+data = data.group(1)
 print('Retrieved', len(data), 'recipes')
 
 try:
@@ -24,4 +26,10 @@ except:
   js = None
   print('None found')
   
-print("Food name:", food_name[0:])
+count = 0
+for line in js:
+  if food_name in line:
+    print(line)
+    count+= 0
+  
+print("Recipes", count)
